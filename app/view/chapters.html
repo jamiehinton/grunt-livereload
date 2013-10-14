@@ -1,0 +1,12 @@
+<ul>
+    <li ng-repeat='chapter in chapters | orderBy:"title"'>
+        <h2>{{chapter.title}}</h2>
+        <p>{{chapter.summary}}</p>
+        <p>
+            <a href="#/chapter/{{chapter.id}}">{{chapter.notes.length}}</a>
+
+        </p>
+
+    </li>
+
+</ul>

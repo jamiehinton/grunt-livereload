@@ -1,13 +1,21 @@
-<html>
+<!DOCTYPE html>
+<html ng-app="Guidebook">
     <head>
         <title>Angualr</title>
-
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+        <script src="Guidebook.js"></script>
+        <script src="/controller/ChaptersController.js"></script>
+        <script src="/controller/NoteController.js"></script>
+        <script src="/model/NoteModel.js"></script>
+        <script src="/model/ChapterModel.js"></script>
+        <link rel="stylesheet" href="/view/style.css">
     </head>
 <body>
-    <h1>AngularJS</h1>
+    <h1>Welcome to the Angular JS Starter Guidebook</h1>
+    <div ng-view>
 
+    </div>
 </body>
-
 <script src="http://localhost:35729/livereload.js"></script>
 </html>
 

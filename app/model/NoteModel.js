@@ -1,0 +1,3 @@
+Guidebook.service('NoteModel', function(){
+    
+});
