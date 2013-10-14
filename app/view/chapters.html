@@ -3,7 +3,7 @@
         <h2>{{chapter.title}}</h2>
         <p>{{chapter.summary}}</p>
         <p>
-            <a href="#/chapter/{{chapter.id}}">{{chapter.notes.length}}</a>
+            <a href="#/chapter/{{chapter.id}}">{{chapter.notes.length}} <ng-pluralize count="chapter.notes.length" when="{'0': 'None', '1': 'Note', 'other': 'notes'}"></ng-pluralize></a>
             <a href="#/addNote/{{chapter.id}}">add note</a>
         </p>
 
