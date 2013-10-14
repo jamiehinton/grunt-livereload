@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+<form name='addNote'>
+    <label for="noteContent">Enter a note</label>
+    <textarea id="noteContent" ng-model='note.content'></textarea>
 
-</body>
-</html>
+    <button ng-click='createNote()'>Create</button>
+
+</form>
