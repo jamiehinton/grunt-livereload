@@ -2,10 +2,20 @@
 <html>
 <head>
     <title></title>
-</head>
-<body>
 
-<img src="http://combineoverwiki.net/images/b/b7/Placeholder_thumb.svg">
+<style>
+    #container{
+        -moz-transform-origin: 0;
+        -moz-transform: scale(2)}
+
+</style>
+</head>
+
+
+<body>
+<div id="container">
+    <img src="http://combineoverwiki.net/images/b/b7/Placeholder_thumb.svg">
+</div>
 <script src="http://localhost:35729/livereload.js"></script>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -16,9 +26,9 @@
                     console.log(msg);
                 }
             };
-    $('body').css('zoom', zoom+'%');
+    //$('#container').css('transform', 'scale(2)');
 
-    $(window).bind('scroll', function(){
+   /* $(window).bind('scroll', function(){
        log('scrolled');
         zoom -= 10;
         //$('body').css('zoom', zoom+'%');
@@ -27,7 +37,7 @@
     $(window).bind('mousewheel', function(v){
        log(v.pageY);
         $('body').css('zoom', v.pageY+'%');
-    });
+    });*/
 </script>
 </body>
 </html>
