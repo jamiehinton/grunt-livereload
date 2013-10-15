@@ -10,8 +10,108 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>
+    var zoom = 950;
+    $('body').css('zoom', zoom+'%');
 
-    $('body').css('zoom', '250%');
+    $(window).bind('scroll', function(){
+       console.log('scrolled');
+        zoom -= 10;
+        //$('body').css('zoom', zoom+'%');
+    });
+
+    $(window).bind('mousewheel', function(v){
+       console.log(v.pageY);
+        $('body').css('zoom', v.pageY+'%');
+    });
 </script>
 </body>
 </html>
+        <!--
+
+        ["onwebkitpointerlockerror",
+        "onwebkitpointerlockchange",
+        "onwebkitfullscreenerror",
+        "onwebkitfullscreenchange",
+        "onselectionchange",
+        "onselectstart",
+        "onsearch",
+        "onreset",
+        "onpaste",
+        "onbeforepaste",
+        "oncopy",
+        "onbeforecopy",
+        "oncut",
+        "onbeforecut",
+        "onsubmit",
+        "onselect",
+        "onscroll",
+        "onreadystatechange",
+        "onmousewheel",
+        "onmouseup",
+        "onmouseover",
+        "onmouseout",
+        "onmousemove",
+        "onmouseleave",
+        "onmouseenter",
+         "onmousedown",
+         "onload",
+         "onkeyup",
+         "onkeypress",
+         "onkeydown",
+         "oninvalid",
+         "oninput",
+         "onfocus",
+         "onerror",
+         "ondrop",
+         "ondragstart",
+         "ondragover",
+         "ondragleave",
+         "ondragenter",
+         "ondragend",
+         "ondrag",
+         "ondblclick",
+         "oncontextmenu",
+         "onclick",
+         "onchange",
+         "onblur",
+         "onabort",
+         "onwebkitpointerlockerror",
+         "onwebkitpointerlockchange",
+         "onwebkitfullscreenerror",
+         "onwebkitfullscreenchange",
+         "onselectionchange",
+         "onselectstart",
+         "onsearch",
+         "onreset",
+         "onpaste",
+         "onbeforepaste",
+         "oncopy",
+         "onbeforecopy",
+         "oncut",
+         "onbeforecut",
+         "onsubmit",
+         "onselect",
+         "onscroll",
+         "onreadystatechange",
+         "onmousewheel",
+         "onmouseup",
+         "onmouseover",
+         "onmouseout",
+         "onmousemove",
+         "onmouseleave",
+         "onmouseenter",
+         "onmousedown",
+         "onload",
+         "onkeyup",
+         "onkeypress",
+         "onkeydown",
+         "oninvalid",
+         "oninput",
+         "onfocus",
+         "onerror",
+         "ondrop",
+         "ondragstart",
+         "ondragover",
+         "ondragleave", "ondragenter", "ondragend", "ondrag", "ondblclick", "oncontextmenu", "onclick", "onchange", "onblur", "onabort"]
+
+        -->
