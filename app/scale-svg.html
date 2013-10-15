@@ -10,17 +10,22 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>
-    var zoom = 950;
+    var zoom = 950,
+            log = function(msg){
+                if(window.console){
+                    console.log(msg);
+                }
+            };
     $('body').css('zoom', zoom+'%');
 
     $(window).bind('scroll', function(){
-       console.log('scrolled');
+       log('scrolled');
         zoom -= 10;
         //$('body').css('zoom', zoom+'%');
     });
 
     $(window).bind('mousewheel', function(v){
-       console.log(v.pageY);
+       log(v.pageY);
         $('body').css('zoom', v.pageY+'%');
     });
 </script>
